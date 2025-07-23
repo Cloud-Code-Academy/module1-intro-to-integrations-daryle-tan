@@ -49,9 +49,9 @@ public class JSONPlaceholderExercise {
             'body' => body,
             'userId' => userId
         };
-        String body_x = JSON.serialize(postData);
+        String bodyX = JSON.serialize(postData);
         // 5. Set the request body
-        req.setBody(body_x);
+        req.setBody(bodyX);
         // 6. Send the request and get the response
         Http http = new Http();
         HttpResponse res = http.send(req);
